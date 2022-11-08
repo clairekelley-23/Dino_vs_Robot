@@ -1,5 +1,5 @@
-from weapon import Weapon
-from robot import Robot
+
+
 
 
 class Dinosaur:
@@ -10,7 +10,9 @@ class Dinosaur:
         self.health = 100
 
     def attack(self, robot):
-        robot.health -= self.attack_power(25)
+        robot.health -= self.attack_power
+        print(f'{self.name} strikes {robot.name}!')
+        print(f'{robot.name} has {robot.health} health points remaining.')
 
     
 

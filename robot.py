@@ -1,3 +1,4 @@
+
 from weapon import Weapon
 
 class Robot:
@@ -5,10 +6,12 @@ class Robot:
     def __init__(self, name):
         self.name = name
         self.attack_weapon = Weapon('Gunblade', 20)
-        self.heath = 100
+        self.health = 100
 
     def attack(self, dinosaur):
         dinosaur.health -= self.attack_weapon.attack_power
+        print(f'{self.name} strikes {dinosaur.name}!')
+        print(f'{dinosaur.name} has {dinosaur.health} health points remaining.')
 
     # def user_input(self):
     #     weapon_name = input("What is the name of your weapon? ")
