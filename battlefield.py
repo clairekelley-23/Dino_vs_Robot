@@ -11,7 +11,9 @@ class Battlefield:
     
     def run_game(self):
         self.display_welcome()
+        print(" ")
         self.battle_phase()
+        print(" ")
         self.display_winner()
 
     def display_welcome(self):
