@@ -13,6 +13,7 @@ class Dinosaur:
         robot.health -= self.attack_power
         print(f'{self.name} strikes {robot.name}!')
         print(f'{robot.name} has {robot.health} health points remaining.')
+        print(" ")
 
     
 
