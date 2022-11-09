@@ -6,8 +6,8 @@ from robot import Robot
 class Battlefield:
 
     def __init__(self):
-       self.robot = Robot('Lord Pipes')
-       self.dinosaur = Dinosaur('Gus', 25)
+       self.robot = Robot('Robo')
+       self.dinosaur = Dinosaur('Fire Princess', 25)
     
     def run_game(self):
         self.display_welcome()
@@ -25,7 +25,7 @@ class Battlefield:
 
     def display_winner(self):
         if self.dinosaur == 0:
-            print(f'{self.dinosaur} made {self.robot} extinct! Battle complete.')
+            print(f'{self.dinosaur.name} made {self.robot.name} extinct! Battle complete.')
         else:
-            print(f'{self.robot} has defeated {self.dinosaur}. {self.dinosaur} is extinct.')
+            print(f'{self.robot.name} has defeated {self.dinosaur.name}. {self.dinosaur.name} is extinct.')
             
